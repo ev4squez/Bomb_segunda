@@ -62,11 +62,7 @@ if (isset($_GET['id'])) {
 				</div>
 				<div class="row">
 					<div class="input-field col s12 m6 13">
-						<?php if ($update == true): ?>
 							<button class="btn" type="submit" name="update">update</button>
-							<?php else: ?>
-								<button class="btn" type="submit" name="save" >Save</button>
-							<?php endif ?>
 						</div>
 					</div>
 				</div>
