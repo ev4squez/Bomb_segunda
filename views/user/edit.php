@@ -44,19 +44,19 @@ if (isset($_GET['id'])) {
 				</div>
 				<div class="row">
 					<div class="input-field col s12 m6 l3">
-						<input class="validate" type="text" id="rut" name="rut" value="<?php echo $rut; ?>"  require>
+						<input class="validate" type="text" id="rut" name="rut" value="<?php echo $rut; ?>"  required>
 						<label for="Rut...">Rut...</label>
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12 m6 l3">
-						<input type="text" id="nombre" name="nombre"value="<?php echo $name; ?>" require>
+						<input type="text" id="nombre" name="nombre"value="<?php echo $name; ?>" required>
 						<label for="Nombre...">Nombre...</label>
 					</div>
 				</div>
 				<div class="row">
 					<div class="input-field col s12 m6 l3">
-						<input type="text" id="apellido" name="apellido" value="<?php echo $address; ?>" require>
+						<input type="text" id="apellido" name="apellido" value="<?php echo $address; ?>" required>
 						<label for="Apellido...">Apellido...</label>
 					</div>
 				</div>

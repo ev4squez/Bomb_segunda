@@ -1,57 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Usuarios del sistema</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
-
+	<title></title>
+	<link rel="stylesheet" href="css/materialize.min.css">
 </head>
 <body>
-	<h1>Usuarios del Sistema</h1>
 
-	<div class="row">
-		<div class="col s12 m12">
-			<a href="new.php" "email me">
-				<input type="submit" name="btn"  class="btn" value="Nuevo Usuario">
-			</a>
-		</div>		
-	</div>
-
-	<?php
-	include 'conexcion.php';
-	global $conex;
-
-	$sql = 'SELECT * FROM responsable ORDER BY Id DESC';
-	?>
-
-	<div class="row">
-		<table class="striped">
-			<thead>
-				<tr>
-					<th>Id</th>
-					<th>Rut</th>
-					<th>Nombre</th>
-					<th>Apellido</th>
-					<th>Accion</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php foreach ($conex->query($sql) as $row) {?>
-					<tr>
-						<td><?php echo $row['Id']?></td>
-						<td><?php echo $row['Rut']?></td>
-						<td><?php echo $row['Nombre']?></td>
-						<td><?php echo $row['Apellido']?></td>
-						<td>
-							<a href="edit.php?id=<?php echo $row['Id'] ?>">Edit</a>	| 
-							<a href="accion_crud.php?del=<?php echo $row['Id'] ?>"> Delete </a></td>
-						</tr>
-					<?php } ?>
-				</tbody>
-			</table>
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a href="#!">one</a></li>
+		<li><a href="#!">two</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">three</a></li>
+	</ul>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">Logo</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#!">Sass</a></li>
+				<li><a href="#!">Components</a></li>
+				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+			</ul>
 		</div>
-		<script src="js/materialize.min.js"></script>
-	</body>
-	</html>
+	</nav>
+
+	
+
+<?php include ('content.php') ?>
+
+<?php include ('footer.php') ?>

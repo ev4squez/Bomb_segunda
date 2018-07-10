@@ -18,19 +18,19 @@
             <div class="row">
                 <div class="row">
                     <div class="input-field col s12 m6 l3">
-                        <input class="validate" type="text" id="rut" name="rut" require>
+                        <input class="validate" type="text" id="rut" name="rut" required>
                         <label for="Rut...">Rut...</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12 m6 l3">
-                        <input type="text" id="nombre" name="nombre" require>
+                        <input type="text" id="nombre" name="nombre" required>
                         <label for="Nombre...">Nombre...</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12 m6 l3">
-                        <input type="text" id="apellido" name="apellido" require>
+                        <input type="text" id="apellido" name="apellido" required>
                         <label for="Apellido...">Apellido...</label>
                     </div>
                 </div>
