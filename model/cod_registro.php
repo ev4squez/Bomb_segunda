@@ -15,7 +15,7 @@ function insert($rut, $nom, $apell){
 	{
 		echo "Error";
 	}else {
-		header('location: user.php');
+		header('location: views/user/user.php');
 	}
 }
 

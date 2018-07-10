@@ -6,7 +6,7 @@
 	<title>Usuarios del sistema</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/materialize.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/materialize.min.css" />
 
 </head>
 <body>
@@ -21,7 +21,7 @@
 	</div>
 
 	<?php
-	include 'conexcion.php';
+	include '../../model/conexcion.php';
 	global $conex;
 
 	$sql = 'SELECT * FROM responsable ORDER BY Id DESC';
@@ -46,12 +46,12 @@
 						<td><?php echo $row['Nombre']?></td>
 						<td><?php echo $row['Apellido']?></td>
 						<td>
-							<a href="edit.php?id=<?php echo $row['Id'] ?>"><i class="material-icons">edit</i></a>&nbsp;&nbsp;&nbsp;<a href="accion_crud.php?del=<?php echo $row['Id'] ?>"><i class="material-icons">delete</i></a></td>
+							<a href="edit.php?id=<?php echo $row['Id'] ?>"><i class="material-icons">edit</i></a>&nbsp;&nbsp;&nbsp;<a href="model/accion_crud.php?del=<?php echo $row['Id'] ?>"><i class="material-icons">delete</i></a></td>
 						</tr>
 					<?php } ?>
 				</tbody>
 			</table>
 		</div>
-		<script src="js/materialize.min.js"></script>
+		<script src="../../js/materialize.min.js"></script>
 	</body>
 	</html>

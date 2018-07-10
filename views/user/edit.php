@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
 <body>
 	<h1>Editar Usuario</h1>
 	<div class="row">
-		<a href="index.php" title="Atras">
+		<a href="views/user/user.php" title="Atras">
 			<input type="button" class="btn" name="" value="Atras"></a>
 		</div>
 

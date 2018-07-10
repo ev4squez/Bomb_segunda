@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Registro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/materialize.css" />
 
 </head>
 <body>
     <h1>Registro</h1>
     <div class="row">
-        <a href="index.php" title="Atras">
+        <a href="user.php" title="Atras">
             <input type="button" class="btn" name="" value="Atras"></a>
         </div>
-        <form action="cod_registro.php" method="post">
+        <form action="../../model/cod_registro.php" method="post">
             <div class="row">
                 <div class="row">
                     <div class="input-field col s12 m6 l3">
-                        <input class="validate" type="text" id="rut" name="rut" required>
+                        <input type="text" id="rut" name="rut" required>
                         <label for="Rut...">Rut...</label>
                     </div>
                 </div>
@@ -41,6 +41,6 @@
                 </div>
             </div>
         </form>
-        <script src="js/materialize.js"></script> 
+        <script src="../../js/materialize.js"></script> 
     </body>
     </html>

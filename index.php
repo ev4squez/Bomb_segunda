@@ -5,22 +5,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
 	<ul id="dropdown1" class="dropdown-content">
-		<li><a href="#!">one</a></li>
-		<li><a href="#!">two</a></li>
+		<li><a href="#!">Material Mayor</a></li>
+		<li><a href="#!">Material Menor</a></li>
 		<li class="divider"></li>
-		<li><a href="#!">three</a></li>
+		<li><a href="#!">Salir</a></li>
 	</ul>
 	<nav>
 		<div class="nav-wrapper">
 			<a href="#!" class="brand-logo">Logo</a>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="#!">Sass</a></li>
-				<li><a href="#!">Components</a></li>
-				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a href="views/user/user.php">Voluntarios</a></li>
+				<li><a href="#!">Oficiales</a></li>
+				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Inventario<i class="material-icons right">arrow_drop_down</i></a></li>
 			</ul>
 		</div>
 	</nav>
